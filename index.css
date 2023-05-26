@@ -5,29 +5,29 @@
 }
 
 header img {
-    height: 80px;
+    height: 70px;
     margin-left: 40px;
 }
 
 body {
     height: 100vh;
-    background-image: url('images/Naomi-Grossman-Funny-Face-3916900222.jpg');
+    background-image: url('images/brooke-campbell-FX4HCB___-c-unsplash.jpg');
     background-size: cover;
     font-family: sans-serif;
     padding: 30px;
 }
 
 main {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 header {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 70px;
     display: flex;
     align-items: center;
     box-shadow: 0 0 25px 0 black;
