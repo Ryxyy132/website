@@ -6,7 +6,7 @@
 }
 
 header img {
-    height: 110px;
+    height: 90px;
     margin-left: -40px;
 }
 
@@ -18,13 +18,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 150vh;
-    background-image: url('images/brooke-campbell-FX4HCB___-c-unsplash.jpg');
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
 
 
 }
+
+
 
 header {
     background-color: #ffffff;
@@ -33,7 +34,7 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +44,8 @@ header {
 
 .navigation a {
     position: relative;
-    font-size: 1.1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
     color: #000000;
     text-decoration: none;
     font-weight: 500;
@@ -82,6 +84,8 @@ header {
     font-weight: 500;
     margin-left: 40px;
     transition: .5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .navigation .btnLogin-popup:hover {
@@ -118,12 +122,44 @@ header li a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
 }
 
 .wrapper .form-box {
     width: 100%;
     padding: 40px;
 }
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
 
 .form-box h2 {
     font-size: 2em;
@@ -204,12 +240,12 @@ header li a {
 }
 
 .remember-forgot label input {
-    accent-color: #000;
+    accent-color: #000000;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #000;
+    color: #000000;
     text-decoration: none;
 
 }
@@ -233,7 +269,7 @@ header li a {
 
 .login-register {
     font-size: .9em;
-    color: #000;
+    color: #000000;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
