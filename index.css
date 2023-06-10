@@ -10,9 +10,6 @@ header img {
     margin-left: -40px;
 }
 
-main {
-    color: rgb(255, 255, 255);
-}
 
 body {
     display: flex;
@@ -24,8 +21,6 @@ body {
 
 
 }
-
-
 
 header {
     background-color: #ffffff;
@@ -100,6 +95,8 @@ header * {
 }
 
 
+
+
 header li {
     margin: 20px;
 }
@@ -110,7 +107,7 @@ header li a {
 }
 
 .wrapper {
-    position: relative;
+    position: absolute;
     width: 400px;
     height: 440px;
     background: transparent;
@@ -283,4 +280,20 @@ header li a {
 
 .login-register p a:hover {
     text-decoration: underline;
+}
+
+.image1 {
+    border-radius: 20px;
+    height: 500px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+}
+
+.necklace {
+
+    font-weight: bold;
+    font-size: 1.875em;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
 }
